@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <style>
+        @media screen and  (min-width:550px){
+        P{
+            color:blue;
+        }
+        .myVideo{
+            position: fixed;
+            right:0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+             z-index: -1;
+        }
+       /* @media screen and  (min-width:550px){
+        body{
+            font-style: oblique;
+            background-color: blue;
+        }
+    }
+    /*@media screen and  (min-width:768px) and (min-width:1024px) {
+        body{
+            font-style: oblique;
+            background-color: rgb(255, 0, 153);
+        }
+    }*/
+    @media screen and  (min-width:1024px){s
+        body{
+            font-style: oblique;
+            background-color: rgb(7, 11, 12);
+            background-size: cover;
+        }
+    }
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-size: cover;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border:white
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color:rgba(200, 200, 200, 0.4)
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <video autoplay muted loop class="myVideo">
+        <source src="c:\Users\DELL\Documents\WhatsApp Video 2024-05-30 at 15.13.41_03f5c370.mp4" type="video/mp4">
+    <p>This is a sample website with a navidation menu.</p>
+    </center>
+    </video>
+    <div class="container">
+        <h1>Book Your Travel</h1>
+        <form action="C:\Users\DELL\Desktop\project5\booking sucessful.html" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" autofocus>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="date">Date of Travel:</label>
+            <input type="date" id="date" name="date" required>
+
+            <input type="submit" value="Book Now">
+        </form>
+    </div>
+</body>
+</html>

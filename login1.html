@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .container {
+    position: relative;
+    height: 100%;
+  }
+  
+  #background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .login-box h2 {
+    margin-top: 0;
+  }
+  
+  .textbox {
+    margin-bottom: 20px;
+  }
+  
+  .textbox input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+         /* @media screen and  (min-width:550px){
+        body{
+            font-style: oblique;
+            background-color: blue;
+        }
+    }
+    /*@media screen and  (min-width:768px) and (min-width:1024px) {
+        body{
+            font-style: oblique;
+            background-color: rgb(255, 0, 153);
+        }
+    }*/
+    @media screen and  (min-width:1024px){s
+        body{
+            font-style: oblique;
+            background-color: rgb(225, 255, 0);
+        }
+    }
+    
+        nav{
+            background-color: rgb(0, 255, 51);
+            color:brown;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type:none;
+            margin:0;
+            padding:0;
+        }
+       
+  </style>
+</head>
+<script>
+  // User Validations
+function loginValidation() {
+      // Ramesh
+var uname = document.myform.username.value;
+       //Ramesh@123
+var password = document.myform.password.value;
+      if(uname==null || uname=="") {
+        alert("Name cant be blank")
+        return false;  
+     } else if (password.length<6){
+        alert("Password Must be 6 letters")
+        return false;
+     }  
+     return true                 
+  }  
+         
+</script>
+
+<body>
+
+
+  <div class="container">
+    <video autoplay muted loop id="background-video">
+      <source src="c:\Users\DELL\Documents\WhatsApp Video 2024-05-30 at 21.30.31_57f08976.mp4" type="video/mp4">
+    
+    </video>
+    <div class="login-box">
+      <h2>Login</h2>
+      
+        
+          
+            <h2>Login Page</h2>  
+  <form name="myform" action="C:\Users\DELL\Desktop\project5\loginsucessfull.html" 	onsubmit="return loginValidation(this)">
+   
+  User Name : <input type="text" name="username"autofocus> <br>
+  Password :  <input type="password" name="password"> <br>
+    <input type="submit"value="submit"><br>
+            
+    
+  
+        </div>
+        
+      </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <font size=12><marquee scrollment="5"><font face="impact"color=black>HOW CAN WE HELP YOU</font></marque><marquee behavior="" direction=""></marquee></marquee></font>
+<head>
+	<h1><a href="home1.html">HOME</a></h1>
+<meta charset="utf-8">
+<title>HTML</title>
+<style>
+	input[type=text] , input[type=email], input[type=number] {
+		display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #302b2b;
+    font-weight: bold;
+    }
+     /*  Smart phone      */
+                  
+     @media screen and (min-width:320px )  {
+
+body {
+     background-color: aqua;
+	 background-size: cover;
+}
+}
+/*  Tablet,ipad      */    
+
+@media Screen and (min-width:768px) and (max-width:1024px){
+body {
+     background-color: rgb(177, 48, 97);
+}
+}
+
+/* Desktops and Laptops asfsdf     */    
+
+@media Screen and (min-width:1224px) {
+body {
+     background-color: rgb(22, 218, 87);
+}
+}
+
+/* Large Screens---------  */
+@media Screen and (min-width:1824px) {
+body {
+     background-color: rgb(51, 54, 208);
+}
+}
+
+ 
+	/* Style the submit button  */
+	input[type=submit] {
+	  background-color: #04AA6D;
+	  color: white;
+	  padding: 12px 20px;
+	  border: none;
+	  border-radius: 4px;
+	  cursor: pointer;
+	}
+	/* Adding hover */
+	input[type=submit]:hover {
+	  background-color: #45a049;
+	}
+	/* Add a background color and some padding around form*/
+	.container {
+	  border-radius:1px;
+	  background-color:rgba(200,200,200,0.4);
+	  padding: 1px;
+	}
+</style>
+</head>
+<body background="c:\Users\DELL\Documents\WhatsApp Image 2024-06-01 at 20.16.48_37e56593.jpg">
+    <div class="container">
+		<center><h3>Contact Form</h3></center>
+		<form action="C:\Users\DELL\Desktop\project5\contact sucess.html" name="contact_form">
+			<label for="first_name">First Name</label>
+			<input name="first_name" type="text" required placeholder="Enter First name"/>
+			<br>
+			<label for="last_name">Last Name</label>
+			<input name="last_name" type="text" required placeholder="Enter Last name"/>
+			<br>
+			<label for="email">Email</label>
+			<input name="email" type="email" required placeholder="Enter email.com"/>
+			<br>
+			<label for="message">Mobile number</label><br>
+			<input type="number" cols="30" rows="10" placeholder="Enter Mobile number" required> </input>
+		
+				<label for="area_code">Area Code:</label><br>
+				<textarea id="area_code" name="area_code" rows="1" cols="10"></textarea><br>
+				<input type="submit" value="Submit">
+		<a href="contact sucess.html"></a>
+			<div >
+			
+			</div>
+		</form>	
+	</div>
+</body>
+</html>
